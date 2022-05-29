@@ -3,6 +3,7 @@ project: xhttp
 target: xhttp-fuzz
 tests:
     - file://corpus
+advanced_triage: true
 
 cmds:
   - cmd: /xhttp_server

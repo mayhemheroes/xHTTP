@@ -25,4 +25,5 @@ FROM --platform=linux/amd64 ubuntu:20.04
 COPY --from=builder /xHTTP/xhttp_server /xhttp_server
 COPY --from=builder /deps /usr/lib
 
+env AFL_NO_FORKSRV=1
 CMD ["/xhttp_server"]

@@ -1,0 +1,12 @@
+image: ghcr.io/capuanob/xhttp-fuzz:latest
+project: xhttp
+target: xhttp-fuzz
+tests:
+    - file://corpus
+
+cmds:
+  - cmd: /xhttp_server
+    network:
+      client: false
+      url: tcp://127.0.0.1:8080
+      timeout: 2.0

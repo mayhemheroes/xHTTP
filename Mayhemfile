@@ -1,7 +1,6 @@
-image: ghcr.io/capuanob/xhttp-fuzz:latest
 project: xhttp
 target: xhttp-fuzz
-tests:
+testsuite:
     - file://corpus
 
 cmds:
